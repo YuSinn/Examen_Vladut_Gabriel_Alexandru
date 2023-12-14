@@ -30,7 +30,11 @@ class planeta : AppCompatActivity() {
         var bundlePlaneta = intent.getBundleExtra("clasePlaneta")
         var planeta = Planeta(bundlePlaneta!!)
         //falta mostrar los text view
-
+        textViewNombre2.text = planeta.nombre
+         textViewDescubrimiento.text = planeta.descubrimiento.toString()
+         textViewSatelite.text = planeta.numeroSatelites.toString()
+         textViewAnillos.text = planeta.presenciaAnillos
+         textViewTipo2.text = planeta.tipo
 
     }
 }

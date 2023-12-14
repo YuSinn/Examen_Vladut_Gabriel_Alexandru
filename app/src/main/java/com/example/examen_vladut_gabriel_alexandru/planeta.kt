@@ -24,8 +24,8 @@ class planeta : AppCompatActivity() {
         var nombre = intent.getStringExtra("nombre")
         var tipo = intent.getStringExtra("tipo")
         var anillos = intent.getStringExtra("anillos")
-        var satelite = intent.getIntExtra("numeroSatelites")!!
-        var descubrimiento = intent.getIntExtra("descubrimiento")!!
+        var satelite = intent.getStringExtra("numeroSatelites")!!
+        var descubrimiento = intent.getStringExtra("descubrimiento")!!
 
         var bundlePlaneta = intent.getBundleExtra("clasePlaneta")
         var planeta = Planeta(bundlePlaneta!!)
